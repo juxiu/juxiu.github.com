@@ -2096,7 +2096,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #38bdff;
+  background: #39eb4e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3401,7 +3401,7 @@ img:hover {
   }
 }
 body {
-  background: url("/images/11.jpg");
+  background: url("http://i4.bvimg.com/630490/180d212a785c0f5f.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
