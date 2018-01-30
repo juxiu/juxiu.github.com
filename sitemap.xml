@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://juxiu.github.io/%E4%B8%8D%E7%9F%A5%E6%89%80%E6%83%B3.html</loc>
+    
+    <lastmod>2018-01-30T15:22:22.785Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://juxiu.github.io/about/index.html</loc>
+    
+    <lastmod>2018-01-30T15:04:16.715Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juxiu.github.io/Memo/index.html</loc>
     
     <lastmod>2018-01-30T14:52:35.628Z</lastmod>
@@ -23,7 +37,7 @@
   </url>
   
   <url>
-    <loc>http://juxiu.github.io/%E4%B8%8D%E7%9F%A5%E6%89%80%E6%83%B3.html</loc>
+    <loc>http://juxiu.github.io/%E6%88%91%E5%BC%80%E5%A7%8B%E5%A4%B1%E6%9C%9B%E5%92%8C%E6%9C%9F%E6%9C%9B.html</loc>
     
     <lastmod>2018-01-30T14:25:59.382Z</lastmod>
     
@@ -40,13 +54,6 @@
     <loc>http://juxiu.github.io/categories/index.html</loc>
     
     <lastmod>2018-01-30T03:54:34.697Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juxiu.github.io/about/index.html</loc>
-    
-    <lastmod>2018-01-30T03:53:40.920Z</lastmod>
     
   </url>
   
