@@ -2096,7 +2096,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #962d2b;
+  background: #ffffb0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2191,6 +2191,7 @@ img:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: justify;
+  white-space: nowrap;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
@@ -2635,6 +2636,29 @@ img:hover {
   content: "|";
   padding-left: 10px;
 }
+#needsharebutton-postbottom {
+  position: relative;
+  cursor: pointer;
+  height: 26px;
+}
+#needsharebutton-postbottom .btn {
+  display: initial;
+  padding: 1px 4px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+#needsharebutton-float {
+  position: fixed;
+  bottom: 38px;
+  left: -8px;
+  z-index: 9999;
+  cursor: pointer;
+}
+#needsharebutton-float .btn {
+  padding: 0 10px 0 14px;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
 .page-archive .archive-page-counter {
   position: relative;
   top: 3px;
@@ -2877,9 +2901,9 @@ img:hover {
   position: absolute;
   top: 0;
   overflow: hidden;
+  background: #cfc;
   padding: 0;
   width: 240px;
-  background: #fff;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2938,7 +2962,6 @@ img:hover {
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 252px);
-  background: none;
   min-height: 700px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
