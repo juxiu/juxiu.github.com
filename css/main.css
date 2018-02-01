@@ -1090,7 +1090,7 @@ pre .javascript .function {
   bottom: 19px;
 }
 .header {
-  background: transparent;
+  background: url("http://i2.bvimg.com/630490/bd5b71d8fdce25a9.gif");
 }
 .header-inner {
   position: relative;
@@ -2095,7 +2095,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4599ff;
+  background: #0dd5e5;
 }
 .links-of-blogroll {
   font-size: 13px;
