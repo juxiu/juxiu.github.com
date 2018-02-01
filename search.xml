@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[elementUI计数器组件获取最新值]]></title>
+    <url>%2FelementUI%E8%AE%A1%E6%95%B0%E5%99%A8%E7%BB%84%E4%BB%B6%E8%8E%B7%E5%8F%96%E6%9C%80%E6%96%B0%E5%80%BC.html</url>
+    <content type="text"><![CDATA[elementUI计数器组件change事件参数问题使用计数器的时候，v-model绑定数据，点击加减号改变数据，elementUI文档中提供change事件在数据改变时处理相关业务逻辑，提供一个回调参数，文档说明为”最后变更的值”； change事件被定义为绑定值被改变时触发，由v-model数据双向绑定，当改变input中的值得时候，绑定的数据即被改变，但在change事件内部传入回调参数时打印出的值却不是改变后的值。 如果点的是”+” ,则input中的值比打印出的值大 “1”, 如果点的是减号，则input中的值比打印出的值小”1”,究其原因，最后变更的值，是上一次点击事件完成时改变的值，因此在点击事件发生时能够获取到的值是当前绑定数据变更前的值，即，就算把data中绑定的值传入change事件，得到的仍然是上一次变更的值，此次改变后的数据是获取不到的。 问题：如何知道在数据改变时是增大还是减小？ 方法1：用watch监听data中被计数器绑定的值，当值被改变时，触发watch属性，执行其处理函数，完成相关业务逻辑。 但如果需要被监听的是一个数组中的多个对象，且数据需从后端获取，该怎么办？数据中的值是不确定的，有几条数据也是不知道的，这时用监听肯定是不行的。 12345678910111213141516171819shoppingItems:[ &#123; id : 3333, main_head :&quot;这就是个标题&quot;, middle_picture :&apos;http://iph.href.lu/200x200&apos;, price : 1299.00, sumPrice :1130.00, quantity : &apos;11&apos;, checked: false &#125;,&#123; id : 2222, main_head :&quot;这就是个标题&quot;, middle_picture :&apos;http://iph.href.lu/200x200&apos;, price : 1299.00, sumPrice :1130.00, quantity : &apos;11&apos;, checked: false &#125; ] 被折磨之后找到的解决办法： vue文档对nextTick的定义：在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。 12345changeNum(newValue)&#123; this.$nextTick(() =&gt; &#123; &lt;!-- 业务逻辑 --&gt; &#125;) &#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[备忘]]></title>
     <url>%2F%E5%A4%87%E5%BF%98.html</url>
     <content type="text"><![CDATA[webstorm破解 贴图库，使用网络图片 谷歌浏览器主题 博客园登录名和密码 guolintao–glt1131.]]></content>
