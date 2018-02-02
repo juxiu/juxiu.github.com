@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://juxiu.github.io/about/index.html</loc>
+    
+    <lastmod>2018-02-02T02:12:41.165Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://juxiu.github.io/%E4%B8%8D%E7%9F%A5%E6%89%80%E6%83%B3.html</loc>
     
     <lastmod>2018-02-01T13:49:06.492Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://juxiu.github.io/%E4%B8%80%E5%8F%AA%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E7%8C%AA.html</loc>
     
     <lastmod>2018-02-01T11:48:06.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://juxiu.github.io/about/index.html</loc>
-    
-    <lastmod>2018-02-01T10:44:01.774Z</lastmod>
     
   </url>
   
