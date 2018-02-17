@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[想起来]]></title>
+    <url>%2F%E6%83%B3%E8%B5%B7%E6%9D%A5.html</url>
+    <content type="text"><![CDATA[来到上海不到两年，毕业也刚过半年而已，却总感觉像是过了很久，很多事情不愿意想，可能也习惯就这样慢慢生活。 我开始变得不像一个正常人，也开始不习惯很多人的价值观和思想认知，但也只能慢慢适应，别无他法。 我总幻想输出一些东西，就算时常写写日记也好，又在事后一次一次觉得没有必要，无话可说，后来想也不想了，以至于现在就想享受一下无忧无虑吃了睡，睡了吃就好，没必要去为那些烦扰的事情多动一下脑子。 渐渐变得所有事都可以无所谓，可能也是一种无声的屈服，麻木而残忍。 我没想过要向什么低头，也不肯承认有什么会强大到令我恐惧，但我确实表现的很可怜，我不知道装下去会怎样，但结局肯定不是那么好，人变化的很快，但总后知后觉。 可能也不只我一个人想过这些，不知道那些人最后是怎么解决这种矛盾的，这些看起来不像问题的问题，最终需要有人站出来解答。 就算总说现实残忍，我们又是怎么样落到被残忍的那一方的？不是应该简单快乐的吗？ 还是我们总在欺骗自己，渴望安定，又渴望冒险，渴望富足，又渴望自由，看起来一直在为了幸福而努力，努力的终点也就是像别人一样活着。 永远都不会满足，在一些大大的道理里面寻求安慰，似乎我们都应该这样，努力一点，为了更好的未来，幸苦一点，一分耕耘一分收获，生活在秩序之下，思想从开始就是被禁锢的，因为我们要遵循传统，什么是传统？比别人幸福的生老病死，结婚生子。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[快速构建一个简单的单页vue应用]]></title>
     <url>%2F%E5%BF%AB%E9%80%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E5%8D%95%E9%A1%B5vue%E5%BA%94%E7%94%A8.html</url>
     <content type="text"><![CDATA[技术栈 vue-cli webpack vux，vux-loader less,less-loader vue-jsonp vue-scroller ES6 vue-cli：一个vue脚手架工具，利用vue-cli可以快速构建一个vue项目。 webpack：一个现代 JavaScript 应用程序的模块打包工具。 vux： 一个移动端的UI组件库。 vue-jsonp vue的一个插件，用于送jsonp请求。 vue-scroller vue的一个插件，用于实现下拉刷新和上拉加载。 构建过程： 通过命令行安装vue-cli，webpack 通过命令行工具初始化一个基于webpack的vue项目， vue init webpack 删除默认组件和样式 安装vux，vux-loader，进行vux配置 配置过程 在webpack配置文件 =&gt; build/webpack.config.js中引入vux-loader 将原来的导出配置赋值给 变量webpackConfig(可随意取名，建议语义化) 调用vux-loader中的merge方法 123456const vuxLoader = require(&apos;vux-loader&apos;)const webpackConfig = originalConfig // 原来的 module.exports 代码赋值给变量 webpackConfigmodule.exports = vuxLoader.merge(webpackConfig, &#123; plugins: [&apos;vux-ui&apos;]&#125;) 因为vux样式中用less，所以还需要安装less和less-loader 安装完成后即可在项目中使vux中提供的插件了。 备注： 滚屏效果使用的是 Scroller插件 (可在npm中下载，npm中有使用文档) 发送jsonp请求使用的是 vue-jsonp插件 (可在npm中下载，npm中有使用文档) 实现项： 首屏轮播 横向tab 走马灯新闻轮播 新闻列表 下拉刷新页面 上拉加载更多 遇到的小问题: 组件配合使用时出现样式冲突 解决 : 手动进行样式调整 从接口中获取的数据结构不符合组件数据结构以及数据错误 解决 ：根据页面展示布局和组件默认配置项合理筛选数据 页面载入时默认触发上拉加载 解决：定义变量记录首次加载，当首次加载完成后再次触发上拉加载时执行函数中的内容]]></content>
